@@ -1,21 +1,30 @@
-def filter_greater(arr, value):
-    ''' возвращает массив из элементов `arr`,
-    которые больше `value`.'''
-    pass
+def filter_greater(arr: list, value:int) -> list:
+    """
+        :param arr: list[]
+        :param value: int
+        :return: list[]
+        """
+    array = []
+    for i in arr:
+        if i > value:
+            array.append(i)
+    return array
 
 
-def filter_less(arr, value):
-    ''' возвращает массив из элементов
-     `arr`, которые меньше `value`. '''
-    pass
+def filter_equal(arr: list, value:int) -> list:
+    """
+        :param arr: list[]
+        :param value: int
+        :return: list[]
+        """
+    array = []
+    for i in arr:
+        if i == value:
+            array.append(i)
+    return array
 
-# Пусть Студент 1 реализует filter_greater и filter_equal, а Студент 2 - filter_less и
-# filter_not_equal !!!
 
-# ИЗМЕНИ разработку СВОЕЙ ФУНКЦИИ, а после, замени имя моей функции filter_less_11111111 на имя по заданию - filter_less!!!
-# УДАЧИ!!!
-
-def filter_less_11111111(arr: list, value:int) -> list:
+def filter_less(arr: list, value:int) -> list:
     """
 
     :param arr: list[]
